@@ -1,0 +1,84 @@
+:root{
+    --raisin-black: #352d39ff;
+    --snow: #f4ededff;
+    --imperial-red: #ed2939ff;
+}
+
+/* Mona Sans is licensed under the SIL Open Font License */
+/* A copy of the license can be found at ./fonts/Mona Sans/LICENSE */
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('./fonts/Mona\ Sans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('./fonts/Mona\ Sans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+/* Hubot Sans is licensed under the SIL Open Font License */
+/* A copy of the license can be found at ./fonts/Hubot Sans/LICENSE */
+@font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('./fonts/Hubot\ Sans/Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('./fonts/Hubot\ Sans/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+    background-color: var(--raisin-black);
+    color: var(--snow);
+    font-family:'Mona Sans';
+    font-variation-settings:'wght' 400;
+    font-size:medium;
+}
+
+@media (max-width:1000px) {
+    html{
+        font-size:smaller;
+    }
+    @media (max-width:500px) {
+        html{
+            font-size:x-small;
+        }
+    }
+}
+
+h1 {
+    font-family:'Hubot Sans';
+    font-variation-settings:'wght' 900;
+    font-variation-settings: 'wdth' 125;
+    font-size:5rem;
+    margin-bottom:1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--imperial-red);
+}
+
+h2 {
+    font-family:'Mona Sans';
+    font-variation-settings:'wght' 700;
+    font-size:3rem;
+}
+
+#mainText {
+    display: inline-block;
+    position:absolute;
+    right:0vw;
+    margin-right:5vw;
+    top:30vh;
+    text-align:right;
+    z-index:20;
+    background-color: var(--raisin-black);
+    padding:10px;
+}
+
+#meImg {
+    position:fixed;
+    height:100vh;
+    left:0px;
+    top:0px;
+    margin:0px;
+    padding:0px;
+}
+
