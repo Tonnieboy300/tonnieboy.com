@@ -61,16 +61,20 @@ h2 {
     font-size:3rem;
 }
 
-#mainText {
+div {
     display: inline-block;
     position:absolute;
     right:0vw;
     margin-right:5vw;
-    top:30vh;
     text-align:right;
     z-index:20;
     background-color: var(--raisin-black);
     padding:10px;
+    border-radius:15px;
+}
+
+#mainText {
+    top:30vh;
 }
 
 #meImg {
@@ -82,3 +86,11 @@ h2 {
     padding:0px;
 }
 
+a {
+    color:var(--snow);
+    padding:2px;
+}
+
+#socials {
+    bottom:10vh;
+}
