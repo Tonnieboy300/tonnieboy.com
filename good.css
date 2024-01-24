@@ -49,15 +49,17 @@
 } */
 
 body {
-    color: var(--snow);
     font-family:'Mona Sans';
     font-variation-settings:'wght' 400;
     font-size:medium;
-    
+    margin:0;
+    background-color: var(--raisin-black);
+    color:var(--snow);
 }
 
 #gradientContainer {
     position:absolute;
+    height:100vh;
     background-color: var(--raisin-black);
     background-image: linear-gradient(225deg, var(--gradient-one), var(--gradient-two), var(--gradient-three));
     top:0;
@@ -89,17 +91,27 @@ h1 {
     text-decoration-color: var(--imperial-red);
 }
 
-h2 {
+#subtitle {
     font-family:'Mona Sans';
     font-variation-settings:'wght' 700;
     font-size:3rem;
 }
 
-#mainText, #socials {
+h2 {
+    font-family:'Hubot Sans';
+    font-variation-settings:'wght' 700;
+    font-variation-settings: 'wdth' 125;
+    font-size:3rem;
+    font-size:3rem;
+    margin-left:2.5vw;
+}
+
+#mainText, #socials{
     display: inline-block;
     position:absolute;
     right:0vw;
     margin-right:5vw;
+    margin-left:5vw;
     text-align:right;
     z-index:20;
     background-color: var(--raisin-black);
@@ -107,12 +119,31 @@ h2 {
     border-radius:15px;
 }
 
+#downArrow{
+    display: block;
+    position:absolute;
+    margin-bottom:2vh;
+    bottom:0vh;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 3rem;
+    font-size:1.5rem;
+    text-align:center;
+    z-index:20;
+    background-color: var(--raisin-black);
+    padding:10px;
+    border-radius:15px;
+}
+
+
 #mainText {
     top:30vh;
 }
 
 #meImg {
-    position:fixed;
+    position:absolute;
     height:100vh;
     left:0px;
     top:0px;
@@ -120,11 +151,45 @@ h2 {
     padding:0px;
 }
 
-a {
+#nameCard a {
     color:var(--snow);
     padding:2px;
 }
 
 #socials {
     bottom:10vh;
+}
+
+#nameCard {
+    color: var(--snow);
+    height:95vh;
+    width:95vw;
+    margin-top: 2.5vh;
+    margin-left:2.5vw;
+    margin-bottom: 2.5vh;
+    margin-right:2.5vw;
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+}
+
+#about {
+    margin-top:5vh;
+    margin-left:2.5vw;
+}
+
+.contactList {
+    list-style-type:none;
+    font-size:1.25rem;
+    padding-left:3vw;
+}
+
+.contactList a {
+    color:var(--snow);
+    text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: var(--imperial-red);
 }
