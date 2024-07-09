@@ -70,13 +70,22 @@ body {
     background-size: 200% 200%;
 }
 
-@media (max-width:1000px) {
-    html{
-        font-size:smaller;
+@media (max-width:800px) {
+    h1 {
+        font-size: 10vw !important;
+    }
+    #subtitle {
+        font-size: 6vw !important;
     }
     @media (max-width:500px) {
         html{
-            font-size:x-small;
+            font-size:small;
+        }
+        h1 {
+            font-size: 50px !important;
+        }
+        #subtitle {
+            font-size: 30px !important;
         }
     }
 }
@@ -192,4 +201,10 @@ h2 {
 .underline{
     text-decoration: underline;
     text-decoration-color: var(--imperial-red);
+}
+
+p{
+    font-size: 1.25rem;
+    margin-left:3vw;
+    margin-right:3vw;
 }
