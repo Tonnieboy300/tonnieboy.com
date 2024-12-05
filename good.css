@@ -81,12 +81,6 @@ body {
         html{
             font-size:small;
         }
-        h1 {
-            font-size: 50px !important;
-        }
-        #subtitle {
-            font-size: 30px !important;
-        }
     }
 }
 
@@ -98,12 +92,14 @@ h1 {
     margin-bottom:1rem;
     text-decoration: underline;
     text-decoration-color: var(--imperial-red);
+    margin-left:5rem;
 }
 
 #subtitle {
     font-family:'Mona Sans';
     font-variation-settings:'wght' 700;
     font-size:3rem;
+    margin-right: 0;
 }
 
 h2 {
