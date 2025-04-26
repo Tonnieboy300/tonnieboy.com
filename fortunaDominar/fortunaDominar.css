@@ -1,0 +1,83 @@
+:root{
+    --white: #f7f7f8;
+    --red: #b60a0a;
+    --black: #010101;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    src: 
+        url(/fonts/Quantico/Quantico-Regular.ttf),
+        url(/fonts/Quantico/Quantico-Bold.ttf),
+        url(/fonts/Quantico/Quantico-BoldItalic.ttf);
+}
+
+html {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Quantico';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left:0;
+    margin-right:0;
+}
+
+h2{
+    font-size:3rem;
+}
+
+h3{
+    font-size:2rem;
+    font-style: normal;
+    margin:12px;
+}
+
+p{
+    font-size:1.5rem;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+}
+
+li {
+    margin:0;
+}
+
+#logoImage {
+    width: 50vw;
+    padding-top:2rem;
+}
+
+a{
+    color: var(--red);
+}
+
+a:visited{
+    color: var(--red);
+}
+
+@media (min-width:800px){
+    #logoImage{
+        width: 400px;
+    }
+}
+@media (max-width:600px){
+    h2{
+        font-size: 2rem;
+    }
+}
