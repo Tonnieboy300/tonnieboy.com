@@ -125,7 +125,8 @@ h2 {
 }
 
 #downArrow{
-    display: block;
+    /* display: block; */
+    display:none;
     position:absolute;
     margin-bottom:2vh;
     bottom:0vh;
