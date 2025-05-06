@@ -189,7 +189,7 @@ h2 {
     padding-left:3vw;
 }
 
-.contactList a {
+.contactList a, footer a {
     color:var(--snow);
     text-decoration: none;
 }
@@ -203,4 +203,9 @@ p{
     font-size: 1.25rem;
     margin-left:3vw;
     margin-right:3vw;
+}
+
+footer {
+    margin-left:2.5vw;
+    margin-top:4rem;
 }
