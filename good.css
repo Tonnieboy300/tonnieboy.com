@@ -190,7 +190,7 @@ h2 {
     padding-left:3vw;
 }
 
-.contactList a, footer a {
+.contactList a, footer a{
     color:var(--snow);
     text-decoration: none;
 }
@@ -209,4 +209,31 @@ p{
 footer {
     margin-left:2.5vw;
     margin-top:4rem;
+}
+
+#errorContainer{
+    height:95svh;
+    width:95vw;
+    margin-top: 2.5vh;
+    margin-left:2.5vw;
+    margin-bottom: 2.5vh;
+    margin-right:2.5vw;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#errorContainer h1{
+    font-size:5rem;
+}
+
+#errorContainer h1, #errorContainer h2{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#errorContainer a{
+    color:var(--snow);
 }
