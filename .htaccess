@@ -15,6 +15,7 @@ Header add X-Content-Type-Options: "nosniff"
 
 
 ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
 Options -Indexes
 
 # php -- BEGIN cPanel-generated handler, do not edit
