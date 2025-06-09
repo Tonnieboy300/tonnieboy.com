@@ -1,46 +1,46 @@
-:root{
-    --raisin-black: #352d39ff;
-    --english-violet:#5D5063ff;
-    --snow: #f4ededff;
-    --imperial-red: #ed2939ff;
+:root {
+  --raisin-black: #352d39ff;
+  --english-violet: #5d5063ff;
+  --snow: #f4ededff;
+  --imperial-red: #ed2939ff;
 
-    --gradient-one: #355C7Dff;
-    --gradient-two: #6C5B7Bff;
-    --gradient-three: #C06C84ff;
+  --gradient-one: #355c7dff;
+  --gradient-two: #6c5b7bff;
+  --gradient-three: #c06c84ff;
 }
 
 /* Mona Sans is licensed under the SIL Open Font License */
 /* A copy of the license can be found at ./fonts/Mona Sans/LICENSE */
 @font-face {
-    font-family: 'Mona Sans';
-    src:
-      url('./fonts/Mona\ Sans/Mona-Sans.woff2') format('woff2 supports variations'),
-      url('./fonts/Mona\ Sans/Mona-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
+  font-family: "Mona Sans";
+  src: url("./fonts/Mona\ Sans/Mona-Sans.woff2")
+      format("woff2 supports variations"),
+    url("./fonts/Mona\ Sans/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
 /* Hubot Sans is licensed under the SIL Open Font License */
 /* A copy of the license can be found at ./fonts/Hubot Sans/LICENSE */
 @font-face {
-    font-family: 'Hubot Sans';
-    src:
-      url('./fonts/Hubot\ Sans/Hubot-Sans.woff2') format('woff2 supports variations'),
-      url('./fonts/Hubot\ Sans/Hubot-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
+  font-family: "Hubot Sans";
+  src: url("./fonts/Hubot\ Sans/Hubot-Sans.woff2")
+      format("woff2 supports variations"),
+    url("./fonts/Hubot\ Sans/Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
 @keyframes bgMove {
-	0% {
-		background-position: 0% 0%;
-	}
-    50% {
-        background-position: 100% 50%;
-    }
-	100% {
-        background-position: 0% 0%;	
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /* @keyframes bgMove {
@@ -49,191 +49,198 @@
 } */
 
 body {
-    font-family:'Mona Sans';
-    font-variation-settings:'wght' 400;
-    font-size:medium;
-    margin:0;
-    background-color: var(--raisin-black);
-    color:var(--snow);
+  font-family: "Mona Sans";
+  font-variation-settings: "wght" 400;
+  font-size: medium;
+  margin: 0;
+  background-color: var(--raisin-black);
+  color: var(--snow);
 }
 
 #gradientContainer {
-    position:absolute;
-    height:100vh;
-    background-color: var(--raisin-black);
-    background-image: linear-gradient(225deg, var(--gradient-one), var(--gradient-two), var(--gradient-three));
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    animation: bgMove 15s infinite ease-in-out;
-    background-size: 200% 200%;
+  position: absolute;
+  height: 100vh;
+  background-color: var(--raisin-black);
+  background-image: linear-gradient(
+    225deg,
+    var(--gradient-one),
+    var(--gradient-two),
+    var(--gradient-three)
+  );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: bgMove 15s infinite ease-in-out;
+  background-size: 200% 200%;
 }
 
-@media (max-width:800px) {
-    h1 {
-        font-size: 10vw !important;
+@media (max-width: 800px) {
+  h1 {
+    font-size: 10vw !important;
+  }
+  #subtitle {
+    font-size: 6vw !important;
+  }
+  @media (max-width: 500px) {
+    html {
+      font-size: small;
     }
-    #subtitle {
-        font-size: 6vw !important;
-    }
-    @media (max-width:500px) {
-        html{
-            font-size:small;
-        }
-    }
+  }
 }
 
 h1 {
-    font-family:'Hubot Sans';
-    font-variation-settings:'wght' 900;
-    font-variation-settings: 'wdth' 125;
-    font-size:5rem;
-    margin-bottom:1rem;
-    text-decoration: underline;
-    text-decoration-color: var(--imperial-red);
-    margin-left:1em;
+  font-family: "Hubot Sans";
+  font-variation-settings: "wght" 900;
+  font-variation-settings: "wdth" 125;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: var(--imperial-red);
+  margin-left: 1em;
 }
 
 #subtitle {
-    font-family:'Mona Sans';
-    font-variation-settings:'wght' 700;
-    font-size:3rem;
-    margin-right: 0;
+  font-family: "Mona Sans";
+  font-variation-settings: "wght" 700;
+  font-size: 3rem;
+  margin-right: 0;
 }
 
 h2 {
-    font-family:'Hubot Sans';
-    font-variation-settings:'wght' 700;
-    font-variation-settings: 'wdth' 125;
-    font-size:3rem;
-    font-size:3rem;
-    margin-left:2.5vw;
+  font-family: "Hubot Sans";
+  font-variation-settings: "wght" 700;
+  font-variation-settings: "wdth" 125;
+  font-size: 3rem;
+  font-size: 3rem;
+  margin-left: 2.5vw;
 }
 
-#mainText, #socials{
-    display: inline-block;
-    position:absolute;
-    right:0vw;
-    margin-right:5vw;
-    margin-left:5vw;
-    text-align:right;
-    z-index:20;
-    background-color: var(--raisin-black);
-    padding:10px;
-    border-radius:15px;
+#mainText,
+#socials {
+  display: inline-block;
+  position: absolute;
+  right: 0vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  text-align: right;
+  z-index: 20;
+  background-color: var(--raisin-black);
+  padding: 10px;
+  border-radius: 15px;
 }
 
-#downArrow{
-    /* display: block; */
-    display:none;
-    position:absolute;
-    margin-bottom:2vh;
-    bottom:0vh;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 3rem;
-    font-size:1.5rem;
-    text-align:center;
-    z-index:20;
-    background-color: var(--raisin-black);
-    padding:10px;
-    border-radius:15px;
+#downArrow {
+  /* display: block; */
+  display: none;
+  position: absolute;
+  margin-bottom: 2vh;
+  bottom: 0vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 20;
+  background-color: var(--raisin-black);
+  padding: 10px;
+  border-radius: 15px;
 }
-
 
 #mainText {
-    top:30vh;
+  top: 30vh;
 }
 
 #meImg {
-    position:absolute;
-    height:100vh;
-    left:0px;
-    top:0px;
-    margin:0px;
-    padding:0px;
+  position: absolute;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #nameCard a {
-    color:var(--snow);
-    padding:2px;
+  color: var(--snow);
+  padding: 2px;
 }
 
 #socials {
-    bottom:10vh;
+  bottom: 10vh;
 }
 
 #nameCard {
-    color: var(--snow);
-    height:95svh;
-    width:95vw;
-    margin-top: 2.5vh;
-    margin-left:2.5vw;
-    margin-bottom: 2.5vh;
-    margin-right:2.5vw;
-    position:relative;
-    overflow:hidden;
-    border-radius:30px;
+  color: var(--snow);
+  height: 95svh;
+  width: 95vw;
+  margin-top: 2.5vh;
+  margin-left: 2.5vw;
+  margin-bottom: 2.5vh;
+  margin-right: 2.5vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 #about {
-    margin-top:5vh;
-    margin-left:2.5vw;
+  margin-top: 5vh;
+  margin-left: 2.5vw;
 }
 
 .contactList {
-    list-style-type:none;
-    font-size:1.25rem;
-    padding-left:3vw;
+  list-style-type: none;
+  font-size: 1.25rem;
+  padding-left: 3vw;
 }
 
-.contactList a, footer a{
-    color:var(--snow);
-    text-decoration: none;
+.contactList a,
+footer a {
+  color: var(--snow);
+  text-decoration: none;
 }
 
-.underline{
-    text-decoration: underline;
-    text-decoration-color: var(--imperial-red);
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--imperial-red);
 }
 
-p{
-    font-size: 1.25rem;
-    margin-left:3vw;
-    margin-right:3vw;
+p {
+  font-size: 1.25rem;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 footer {
-    margin-left:2.5vw;
-    margin-top:4rem;
+  margin-left: 2.5vw;
+  margin-top: 4rem;
 }
 
-#errorContainer{
-    height:95svh;
-    width:95vw;
-    margin-top: 2.5vh;
-    margin-left:2.5vw;
-    margin-bottom: 2.5vh;
-    margin-right:2.5vw;
-    position:absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#errorContainer {
+  height: 95svh;
+  width: 95vw;
+  margin-top: 2.5vh;
+  margin-left: 2.5vw;
+  margin-bottom: 2.5vh;
+  margin-right: 2.5vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#errorContainer h1{
-    font-size:5rem;
+#errorContainer h1 {
+  font-size: 5rem;
 }
 
-#errorContainer h1, #errorContainer h2{
-    margin-left: 0;
-    margin-right: 0;
+#errorContainer h1,
+#errorContainer h2 {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#errorContainer a{
-    color:var(--snow);
+#errorContainer a {
+  color: var(--snow);
 }
